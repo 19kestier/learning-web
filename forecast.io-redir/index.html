@@ -1,0 +1,18 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Forecast.io</title>
+
+</head>
+
+<body>
+  <script>
+    function showlocation(){navigator.geolocation.getCurrentPosition(callback);}
+    function callback(position){window.location = "http://forecast.io/#/f/" + position.coords.latitude + "," + position.coords.longitude;}
+      showlocation()
+  </script>
+</body>
+</html>
